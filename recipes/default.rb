@@ -27,7 +27,9 @@ user = node[:kafka][:user]
 group = node[:kafka][:group]
 
 if node[:kafka][:broker_id].nil? || node[:kafka][:broker_id].empty?
-		node.set[:kafka][:broker_id] = node[:ipaddress].gsub(".","")
+    # node id must fit in a java integer
+    default_id = node[:ipaddress].gsub(".","").to_i % (2**31 - 1)
+    node.set[:kafka][:broker_id] = default_id.to_s
 end
 
 if node[:kafka][:broker_host_name].nil? || node[:kafka][:broker_host_name].empty?
