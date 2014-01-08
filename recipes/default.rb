@@ -122,7 +122,8 @@ template "#{install_dir}/bin/service-control" do
   group "root"
   mode  00755
   variables({
-    :install_dir => "#{install_dir}",
+    :install_dir => "#{install_dir}/#{distrib}",
+    :config_dir => install_dir,
     :log_dir => node[:kafka][:log_dir],
     :java_home => java_home,
     :java_jmx_port => node[:kafka][:jmx_port],
