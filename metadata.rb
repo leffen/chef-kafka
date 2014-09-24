@@ -1,3 +1,4 @@
+name             'chef-kafka'
 maintainer        "Geoforce, Inc."
 maintainer_email  "kberry@geoforce.com"
 license           "Apache 2.0"
