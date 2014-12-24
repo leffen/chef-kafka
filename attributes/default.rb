@@ -19,7 +19,7 @@
 # Install
 default[:kafka][:version] = "0.7.2"
 default[:kafka][:download_url] = "http://archive.apache.org/dist/kafka/old_releases/kafka-0.7.2-incubating/kafka-0.7.2-incubating-src.tgz"
-default[:kafka][:checksum] = "5d2c39a93d0e"
+default[:kafka][:checksum] = "5d2c39"
 
 default[:kafka][:install_dir] = "/opt/kafka"
 default[:kafka][:data_dir] = "/var/kafka"

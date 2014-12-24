@@ -181,21 +181,21 @@ execute "chmod" do
   action :run
 end
 
-execute "sbt update" do
-  user  "root"
-  group "root"
-  command "bash sbt update"
-  cwd "#{install_dir}/#{distrib}"
-  action :run
-end
-
-execute "sbt package" do
-  user  "root"
-  group "root"
-  command "bash sbt package"
-  cwd "#{install_dir}/#{distrib}"
-  action :run 
-end
+#execute "sbt update" do
+#  user  "root"
+#  group "root"
+#  command "bash sbt update"
+#  cwd "#{install_dir}/#{distrib}"
+#  action :run
+#end
+#
+#execute "sbt package" do
+#  user  "root"
+#  group "root"
+#  command "bash sbt package"
+#  cwd "#{install_dir}/#{distrib}"
+#  action :run
+#end
 
 #TODO : install service script
 #TODO : start service
