@@ -4,7 +4,7 @@ maintainer_email  "kberry@geoforce.com"
 license           "Apache 2.0"
 description       "Intalls and configures a Kafka broker from source"
 long_description  IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version           "1.0.23"
+version           "1.0.24"
 
 depends           "java"
 depends           "runit"
