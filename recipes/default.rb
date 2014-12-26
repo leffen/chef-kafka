@@ -101,7 +101,7 @@ end
 
 distrib = "kafka-#{node[:kafka][:version]}-incubating-src"
 tarball = "#{distrib}.tgz"
-download_file = "#{node[:kafka][:download_url]}/#{tarball}"
+download_file = "#{node[:kafka][:download_url]}"
 
 remote_file "#{Chef::Config[:file_cache_path]}/#{tarball}" do
   source download_file
